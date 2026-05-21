@@ -1,0 +1,651 @@
+:root {
+  --cpp-primary: #0f172a;
+  --cpp-secondary: #2563eb;
+  --cpp-accent: #22c55e;
+  --cpp-soft-bg: #eaf0fb;
+  --cpp-text: #122744;
+  --cpp-muted: #4d6484;
+  --cpp-border: rgba(37, 99, 235, 0.2);
+}
+
+.cpp-detail-page {
+  background: var(--cpp-soft-bg);
+  color: var(--cpp-text);
+}
+
+.cpp-hero {
+  position: relative;
+  min-height: 620px;
+  padding-top: 72px;
+  padding-bottom: 84px;
+  color: #eff6ff;
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/cpp.jpg") center / cover no-repeat;
+  overflow: hidden;
+}
+
+.advance-excel-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/advanced-excel.jfif") center / cover no-repeat;
+}
+
+.core-java-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/java.bmp") center / cover no-repeat;
+}
+
+.coreldraw-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/coreldraw.png") center / cover no-repeat;
+}
+
+.dtp-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/dtp.jpg") center / cover no-repeat;
+}
+
+.core-python-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/python.jfif") center / cover no-repeat;
+}
+
+.html-css-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/html-css.jpg") center / cover no-repeat;
+}
+
+.illustrator-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/illustrator.png") center / cover no-repeat;
+}
+
+.indesign-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/indesign.png") center / cover no-repeat;
+}
+
+.javascript-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/javascript.png") center / cover no-repeat;
+}
+
+.msoffice-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/msoffice.jpg") center / cover no-repeat;
+}
+
+.pagemaker-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/adobePagemaker.jpg") center / cover no-repeat;
+}
+
+.webdesigning-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/web-designing.jpg") center / cover no-repeat !important;
+}
+
+.photoshop-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/photoshop.jfif") center / cover no-repeat;
+}
+
+.sql-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/sql.png") center / cover no-repeat !important;
+}
+
+.tallyprime-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/course/tally-prime.jpg") center / cover no-repeat !important;
+}
+
+.dca-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/tech/dca.jpeg") center / cover no-repeat !important;
+}
+
+.dfa-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/tech/dfa.png") center / cover no-repeat !important;
+}
+
+.adca-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/tech/adca.png") center / cover no-repeat !important;
+}
+
+.doap-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/tech/da&p.jpg") center / cover no-repeat !important;
+}
+
+.dwd-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/tech/Diploma-in-Web-Designing.avif") center / cover no-repeat !important;
+}
+
+.saperp-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/tech/sap.jfif") center / cover no-repeat !important;
+}
+
+.digitalmarketing-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/tech/digital-marketing.jpg") center / cover no-repeat !important;
+}
+
+.graphicdesign-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/tech/graphic-design.jfif") center / cover no-repeat !important;
+}
+
+.coa-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/tech/coa.jpg") center / cover no-repeat !important;
+}
+
+.coa-hero .hero-copy:empty {
+  display: none;
+}
+
+.typewriting-hero {
+  background:
+    linear-gradient(108deg, rgba(15, 23, 42, 0.96), rgba(14, 35, 70, 0.82) 52%, rgba(16, 53, 108, 0.62)),
+    url("../Images/tech/typewriting.jpg") center / cover no-repeat !important;
+}
+
+.cpp-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 84% 12%, rgba(34, 197, 94, 0.2), transparent 36%),
+    radial-gradient(circle at 14% 78%, rgba(96, 165, 250, 0.18), transparent 44%);
+  pointer-events: none;
+}
+
+.cpp-hero .top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+.webdesigning-hero .sign-in {
+  border: 1px solid rgba(var(--primary-rgb), 0.45);
+  color: var(--primary);
+  background: rgba(var(--secondary-rgb), 0.24);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.webdesigning-hero .sign-in:hover {
+  background: rgba(var(--secondary-rgb), 0.42);
+  border-color: rgba(var(--primary-rgb), 0.7);
+  box-shadow: none;
+}
+
+.cpp-hero-copy {
+  position: relative;
+  z-index: 2;
+  padding-top: 122px;
+  max-width: 1040px;
+}
+
+.hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0 0 0.75rem;
+  padding: 0.38rem 0.78rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #d8ecff;
+  border: 1px solid rgba(148, 197, 255, 0.36);
+  background: rgba(13, 40, 79, 0.52);
+}
+
+.cpp-hero-copy h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4.3vw, 3.35rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.hero-copy {
+  margin: 0.95rem 0 0;
+  max-width: 760px;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(235, 246, 255, 0.88);
+}
+
+.hero-breadcrumb-wrap {
+  margin-top: 1rem;
+}
+
+.hero-breadcrumb .breadcrumb-item,
+.hero-breadcrumb .breadcrumb-item.active {
+  color: rgba(232, 245, 255, 0.9);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.hero-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  color: rgba(232, 245, 255, 0.65);
+}
+
+.hero-breadcrumb .breadcrumb-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero-breadcrumb .breadcrumb-item a:hover {
+  color: #c8f3d7;
+}
+
+.hero-facts {
+  margin-top: 1.6rem;
+}
+
+.fact-chip {
+  height: 100%;
+  border: 1px solid rgba(168, 216, 255, 0.34);
+  border-radius: 14px;
+  background: rgba(11, 35, 71, 0.64);
+  padding: 0.8rem 0.82rem;
+}
+
+.fact-chip span {
+  display: block;
+  font-size: 0.74rem;
+  color: rgba(219, 241, 255, 0.78);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.fact-chip strong {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.course-overview {
+  margin-top: -48px;
+  position: relative;
+  z-index: 3;
+}
+
+.panel-card {
+  border: 1px solid var(--cpp-border);
+  border-radius: 18px;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.98), rgba(239, 246, 255, 0.95));
+  box-shadow: 0 16px 32px rgba(9, 27, 54, 0.1);
+  padding: 1.45rem 1.35rem;
+}
+
+.panel-card h2,
+.panel-card h3 {
+  margin: 0 0 0.75rem;
+  color: #0f2d52;
+  font-weight: 800;
+}
+
+.panel-card h2 {
+  font-size: 1.46rem;
+}
+
+.panel-card h3 {
+  font-size: 1.26rem;
+}
+
+.panel-card p {
+  margin: 0 0 0.7rem;
+  color: var(--cpp-muted);
+  line-height: 1.72;
+}
+
+.check-list {
+  list-style: none;
+  margin: 0.2rem 0 0;
+  padding: 0;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 1.45rem;
+  margin: 0 0 0.58rem;
+  color: #294668;
+}
+
+.check-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 0.58rem;
+  height: 0.58rem;
+  border-radius: 50%;
+  background: var(--cpp-accent);
+}
+
+.highlights-card {
+  background: linear-gradient(155deg, rgba(12, 43, 88, 0.96), rgba(19, 63, 125, 0.9));
+  border-color: rgba(151, 219, 255, 0.35);
+}
+
+.highlights-card h3 {
+  color: #ffffff;
+}
+
+.highlights-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.highlights-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin-bottom: 0.68rem;
+  color: rgba(233, 246, 255, 0.92);
+}
+
+.highlights-list i {
+  color: #b8f3cf;
+  font-size: 0.96rem;
+  margin-top: 0.15rem;
+}
+
+.primary-cta {
+  margin-top: 0.45rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.62rem 1.12rem;
+  font-weight: 700;
+  color: #062f1b;
+  background: linear-gradient(95deg, #8ff0b3, #42d07a);
+}
+
+.curriculum-section,
+.outcomes-section,
+.faq-section,
+.enroll-strip {
+  margin-top: 74px;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: clamp(1.45rem, 3.5vw, 2.05rem);
+  color: #10345e;
+  font-weight: 800;
+}
+
+.section-head p {
+  margin: 0.45rem 0 0;
+  color: #3d5877;
+}
+
+.module-card {
+  border: 1px solid var(--cpp-border);
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 12px 24px rgba(8, 24, 46, 0.07);
+  padding: 1.15rem;
+}
+
+.module-no {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.05rem;
+  height: 2.05rem;
+  border-radius: 50%;
+  margin-bottom: 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  background: linear-gradient(120deg, #1e4f9d, #2a73df);
+}
+
+.module-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.06rem;
+  color: #153a66;
+  font-weight: 700;
+}
+
+.module-card p {
+  margin: 0;
+  color: #4c6685;
+  line-height: 1.6;
+}
+
+.tag-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.tag-wrap span {
+  border: 1px solid rgba(37, 99, 235, 0.26);
+  border-radius: 999px;
+  padding: 0.46rem 0.78rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #1c426f;
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.faq-list {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.faq-list details {
+  border: 1px solid rgba(37, 99, 235, 0.23);
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 0.85rem 0.9rem;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #11355f;
+}
+
+.faq-list p {
+  margin: 0.68rem 0 0;
+  color: #4a6380;
+  line-height: 1.65;
+}
+
+.enroll-card {
+  border: 1px solid rgba(154, 220, 255, 0.4);
+  border-radius: 18px;
+  padding: 1.3rem 1.2rem;
+  background:
+    linear-gradient(130deg, rgba(7, 30, 60, 0.97), rgba(11, 47, 87, 0.9)),
+    radial-gradient(circle at 90% 12%, rgba(67, 207, 125, 0.22), transparent 34%);
+  color: #ecf7ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.strip-kicker {
+  margin: 0;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(201, 243, 218, 0.94);
+  font-weight: 700;
+}
+
+.enroll-card h2 {
+  margin: 0.35rem 0 0.45rem;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  color: #ffffff;
+}
+
+.enroll-card p {
+  margin: 0;
+  color: rgba(232, 246, 255, 0.86);
+}
+
+.enroll-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.58rem;
+}
+
+.strip-btn {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.58rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #062f1b;
+  background: linear-gradient(95deg, #92f3b7, #43cf7a);
+}
+
+.strip-btn.secondary {
+  color: #ffffff;
+  border: 1px solid rgba(219, 246, 255, 0.56);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.site-footer {
+  margin-top: 78px;
+}
+
+@media (max-width: 1075.98px) {
+  .cpp-hero {
+    min-height: 590px;
+  }
+
+  .cpp-hero-copy {
+    padding-top: 106px;
+  }
+
+  .course-overview {
+    margin-top: -38px;
+  }
+
+  .enroll-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .coa-hero {
+    background:
+      linear-gradient(180deg, rgba(15, 23, 42, 0.82), rgba(14, 35, 70, 0.58) 42%, rgba(16, 53, 108, 0.18)),
+      url("../Images/tech/coa.jpg") center bottom / contain no-repeat !important;
+    background-color: #eef3fb;
+  }
+
+  .cpp-hero {
+    min-height: 525px;
+    padding-bottom: 64px;
+  }
+
+  .cpp-hero-copy {
+    padding-top: 92px;
+  }
+
+  .hero-copy {
+    font-size: 0.95rem;
+    line-height: 1.68;
+  }
+
+  .course-overview {
+    margin-top: -30px;
+  }
+
+  .panel-card,
+  .module-card,
+  .enroll-card {
+    padding: 1rem;
+  }
+
+  .curriculum-section,
+  .outcomes-section,
+  .faq-section,
+  .enroll-strip {
+    margin-top: 56px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .coa-hero {
+    background:
+      linear-gradient(180deg, rgba(15, 23, 42, 0.8), rgba(14, 35, 70, 0.54) 38%, rgba(16, 53, 108, 0.16)),
+      url("../Images/tech/coa.jpg") center bottom / contain no-repeat !important;
+    background-color: #eef3fb;
+  }
+
+  .cpp-hero {
+    min-height: 500px;
+    padding-bottom: 56px;
+  }
+
+  .hero-kicker {
+    font-size: 0.72rem;
+  }
+
+  .fact-chip {
+    padding: 0.7rem;
+  }
+
+  .fact-chip strong {
+    font-size: 0.85rem;
+  }
+
+  .site-footer {
+    margin-top: 62px;
+  }
+}
+
+.foot-social a{
+  display: inline-block;
+}

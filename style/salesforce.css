@@ -1,0 +1,1626 @@
+:root {
+  --salesforce-navy: #0f2f57;
+  --salesforce-navy-deep: #163963;
+  --salesforce-blue: #08a5ea;
+  --salesforce-blue-bright: #23b7f4;
+  --salesforce-text-soft: rgba(233, 242, 255, 0.82);
+  --salesforce-text-muted: rgba(209, 225, 244, 0.72);
+  --salesforce-copy: #3f5a77;
+  --salesforce-copy-soft: #4a6581;
+}
+
+.salesforce-hero {
+  position: relative;
+  min-height: 320px;
+  padding-top: 72px;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(48, 122, 201, 0.22), transparent 28%),
+    radial-gradient(circle at 84% 16%, rgba(13, 182, 244, 0.16), transparent 24%),
+    linear-gradient(135deg, #284f86 0%, #224679 46%, #19365d 100%);
+  overflow: hidden;
+}
+
+.salesforce-hero .top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+.salesforce-showcase {
+  position: relative;
+  z-index: 1;
+}
+
+.salesforce-showcase-shell {
+  padding-top: 78px;
+  padding-bottom: 74px;
+}
+
+.salesforce-showcase-copy {
+  max-width: 720px;
+  color: #ffffff;
+}
+
+.salesforce-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1.55rem;
+  border: 1px solid rgba(8, 165, 234, 0.52);
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  color: #7ad7ff;
+  background: rgba(8, 165, 234, 0.12);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.salesforce-eyebrow i {
+  font-size: 0.78rem;
+}
+
+.salesforce-showcase-copy h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.salesforce-showcase-copy h1 span {
+  color: var(--salesforce-blue);
+}
+
+.salesforce-intro {
+  margin: 1.55rem 0 0;
+  max-width: 650px;
+  color: var(--salesforce-text-soft);
+  font-size: 1.08rem;
+  line-height: 1.72;
+}
+
+.salesforce-partnership-note {
+  margin: 1rem 0 0;
+  max-width: 660px;
+  color: rgba(241, 247, 255, 0.9);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.salesforce-partnership-note span {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.salesforce-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.salesforce-primary-btn,
+.salesforce-secondary-btn {
+  white-space: nowrap;
+}
+
+.salesforce-brand-card {
+  width: min(100%, 340px);
+  margin-left: auto;
+  padding: 2.35rem 1.6rem 2rem;
+  border: 1px solid rgba(214, 232, 255, 0.16);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 48px rgba(12, 25, 46, 0.16);
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.salesforce-brand-logo {
+  width: 250px;
+  max-width: 100%;
+  margin-bottom: 1.9rem;
+}
+
+.salesforce-partner-logo {
+  width: 195px;
+  max-width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.salesforce-cloud-mark {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 82px;
+  margin: 0 auto 1.75rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #18b5ef 0%, #0697df 100%);
+  color: #ffffff;
+}
+
+.salesforce-cloud-mark::before,
+.salesforce-cloud-mark::after {
+  content: "";
+  position: absolute;
+  bottom: 14px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.salesforce-cloud-mark::before {
+  left: -20px;
+  width: 60px;
+  height: 60px;
+}
+
+.salesforce-cloud-mark::after {
+  right: -18px;
+  width: 52px;
+  height: 52px;
+}
+
+.salesforce-cloud-mark span {
+  position: relative;
+  z-index: 1;
+  font-size: 1.12rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-transform: lowercase;
+}
+
+.salesforce-partner-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+  border-radius: 999px;
+  padding: 0.48rem 1rem;
+  color: #ffffff;
+  background: linear-gradient(95deg, #19b4ee, #0aa3e6);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.salesforce-stats-strip {
+  background: rgba(56, 98, 154, 0.88);
+  border-top: 1px solid rgba(219, 234, 255, 0.08);
+}
+
+.salesforce-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.salesforce-stat {
+  margin: 0;
+  padding: 1.85rem 1.25rem 1.55rem;
+  text-align: center;
+}
+
+.salesforce-stat + .salesforce-stat {
+  border-left: 1px solid rgba(217, 231, 249, 0.12);
+}
+
+.salesforce-stat h2 {
+  margin: 0;
+  color: var(--salesforce-blue);
+  font-size: clamp(2rem, 3.1vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.salesforce-stat p {
+  margin: 0.45rem 0 0;
+  color: var(--salesforce-text-muted);
+  font-size: 0.98rem;
+}
+
+.salesforce-consult-wrap {
+  min-width: max-content;
+}
+
+.salesforce-consult-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.salesforce-main {
+  background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 100%);
+  min-height: 1px;
+}
+
+.salesforce-services-section {
+  padding: 78px 0 92px;
+}
+
+.salesforce-section-head {
+  max-width: 680px;
+}
+
+.salesforce-section-label {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 1.15rem;
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  color: var(--salesforce-blue);
+  background: #e7f4ff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.salesforce-section-head h2 {
+  margin: 0;
+  color: var(--salesforce-navy);
+  font-size: clamp(2.1rem, 4vw, 3.35rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.salesforce-section-head h2 span {
+  color: var(--salesforce-blue);
+}
+
+.salesforce-section-intro {
+  margin: 1.15rem 0 0;
+  color: #567095;
+  font-size: 1.08rem;
+  line-height: 1.72;
+}
+
+.salesforce-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.35rem;
+  margin-top: 2.8rem;
+}
+
+.salesforce-service-card {
+  --service-accent: var(--salesforce-blue);
+  --service-icon-bg: #e8f2ff;
+  height: 100%;
+  padding: 1.75rem 1.75rem 1.7rem;
+  border: 1px solid #d6e5f8;
+  border-top: 4px solid var(--service-accent);
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(27, 73, 129, 0.08);
+}
+
+.salesforce-service-card-sky {
+  --service-accent: #08a5ea;
+  --service-icon-bg: #e8f5ff;
+}
+
+.salesforce-service-card-blue {
+  --service-accent: #1674ea;
+  --service-icon-bg: #e7efff;
+}
+
+.salesforce-service-card-teal {
+  --service-accent: #11c2ca;
+  --service-icon-bg: #e4f9fb;
+}
+
+.salesforce-service-card-purple {
+  --service-accent: #8c69c8;
+  --service-icon-bg: #f1eafd;
+}
+
+.salesforce-service-card-orange {
+  --service-accent: #f3a31b;
+  --service-icon-bg: #fff3df;
+}
+
+.salesforce-service-card-green {
+  --service-accent: #27b56b;
+  --service-icon-bg: #e3f7ec;
+}
+
+.salesforce-service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1.2rem;
+  border-radius: 0.85rem;
+  color: var(--service-accent);
+  background: var(--service-icon-bg);
+  font-size: 1.45rem;
+}
+
+.salesforce-service-card h3 {
+  margin: 0;
+  color: var(--salesforce-navy);
+  font-size: 1.02rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.salesforce-service-card p {
+  margin: 1rem 0 0;
+  color: #567095;
+  font-size: 0.99rem;
+  line-height: 1.72;
+}
+
+.salesforce-service-list {
+  margin: 1.15rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.salesforce-service-list li {
+  position: relative;
+  margin-top: 0.55rem;
+  padding-left: 1rem;
+  color: #567095;
+  font-size: 0.98rem;
+  line-height: 1.58;
+}
+
+.salesforce-service-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--service-accent);
+  font-weight: 800;
+}
+
+.salesforce-pipeline-section {
+  padding: 0 0 92px;
+}
+
+.salesforce-pipeline-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 2.8rem;
+  border: 1px solid #d6e5f8;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.salesforce-pipeline-step {
+  --pipeline-accent: var(--salesforce-blue);
+  position: relative;
+  min-height: 180px;
+  padding: 1.55rem 1.3rem 1.45rem;
+  text-align: center;
+}
+
+.salesforce-pipeline-step + .salesforce-pipeline-step {
+  border-left: 1px solid #d6e5f8;
+}
+
+.salesforce-pipeline-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -11px;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 11px solid #10a4e8;
+  transform: translateY(-50%);
+}
+
+.salesforce-pipeline-step-sky {
+  --pipeline-accent: #0b9ee8;
+}
+
+.salesforce-pipeline-step-blue {
+  --pipeline-accent: #1674ea;
+}
+
+.salesforce-pipeline-step-teal {
+  --pipeline-accent: #11b8d5;
+}
+
+.salesforce-pipeline-step-purple {
+  --pipeline-accent: #7c61bb;
+}
+
+.salesforce-pipeline-step-green {
+  --pipeline-accent: #27b56b;
+}
+
+.salesforce-pipeline-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 0.9rem;
+  border-radius: 999px;
+  color: #ffffff;
+  background: var(--pipeline-accent);
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.salesforce-pipeline-step h3 {
+  margin: 0;
+  color: var(--salesforce-navy);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.salesforce-pipeline-step p {
+  margin: 0.7rem 0 0;
+  color: #567095;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.salesforce-agentforce-section {
+  padding: 0 0 92px;
+  background: linear-gradient(180deg, #315a92 0%, #2d578f 100%);
+}
+
+.salesforce-agentforce-section .container {
+  padding-top: 72px;
+  padding-bottom: 30px;
+}
+
+.salesforce-agentforce-head {
+  max-width: 760px;
+}
+
+.salesforce-agentforce-head .salesforce-section-label {
+  margin-bottom: 1.35rem;
+  color: #16b8ff;
+  background: rgba(13, 117, 181, 0.45);
+}
+
+.salesforce-agentforce-head h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.salesforce-agentforce-head h2 span {
+  color: var(--salesforce-blue);
+}
+
+.salesforce-agentforce-head p {
+  margin: 1.2rem 0 0;
+  color: rgba(232, 241, 255, 0.82);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.salesforce-agentforce-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.35rem;
+  margin-top: 2.8rem;
+}
+
+.salesforce-agentforce-card {
+  min-height: 178px;
+  padding: 1.85rem 1.55rem 1.4rem;
+  border: 1px solid rgba(178, 205, 242, 0.16);
+  border-radius: 0.95rem;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.salesforce-agentforce-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 1.15rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 1.5rem;
+}
+
+.salesforce-agentforce-card h3 {
+  margin: 0;
+  color: #08a5ea;
+  font-size: 0.98rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.salesforce-agentforce-card p {
+  margin: 0.85rem 0 0;
+  color: rgba(226, 239, 255, 0.78);
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+.salesforce-agentforce-capabilities {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid rgba(12, 165, 234, 0.32);
+  border-radius: 0.9rem;
+  background: rgba(17, 99, 162, 0.22);
+}
+
+.salesforce-agentforce-cap-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.55rem 0.95rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.salesforce-agentforce-cap-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  color: #08a5ea;
+  background: rgba(8, 165, 234, 0.13);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.salesforce-bi-section {
+  padding: 78px 0 92px;
+}
+
+.salesforce-bi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: 2.6rem;
+}
+
+.salesforce-bi-card {
+  --bi-accent: var(--salesforce-blue);
+  --bi-icon-bg: #e8f5ff;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.45rem 1.35rem;
+  border: 1px solid #d6e5f8;
+  border-radius: 0.95rem;
+  background: #ffffff;
+  box-shadow: 0 14px 32px rgba(27, 73, 129, 0.06);
+}
+
+.salesforce-bi-card-sky {
+  --bi-accent: #08a5ea;
+  --bi-icon-bg: #e8f5ff;
+}
+
+.salesforce-bi-card-blue {
+  --bi-accent: #1674ea;
+  --bi-icon-bg: #e7efff;
+}
+
+.salesforce-bi-card-teal {
+  --bi-accent: #11c2ca;
+  --bi-icon-bg: #e4f9fb;
+}
+
+.salesforce-bi-card-purple {
+  --bi-accent: #8c69c8;
+  --bi-icon-bg: #f1eafd;
+}
+
+.salesforce-bi-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 0.85rem;
+  color: var(--bi-accent);
+  background: var(--bi-icon-bg);
+  font-size: 1.45rem;
+}
+
+.salesforce-bi-copy h3 {
+  margin: 0;
+  color: var(--salesforce-navy);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.salesforce-bi-copy p {
+  margin: 0.7rem 0 0;
+  color: #567095;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.salesforce-bi-pillbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, #2f5a93 0%, #2b538a 100%);
+}
+
+.salesforce-bi-pillbar-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  color: var(--salesforce-blue);
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.94rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.salesforce-bi-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  color: #c9daf3;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.salesforce-why-section {
+  padding: 0 0 92px;
+}
+
+.salesforce-why-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.salesforce-why-copy h2 {
+  margin: 0;
+  color: var(--salesforce-navy);
+  font-size: clamp(2.1rem, 4vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.salesforce-why-copy h2 span {
+  color: var(--salesforce-blue);
+}
+
+.salesforce-why-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.salesforce-why-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.salesforce-why-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  color: var(--salesforce-blue);
+  background: #e8f5ff;
+  font-size: 1rem;
+}
+
+.salesforce-why-text h3 {
+  margin: 0;
+  color: var(--salesforce-navy);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.salesforce-why-text p {
+  margin: 0.25rem 0 0;
+  color: #567095;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.salesforce-why-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.salesforce-why-stat {
+  padding: 1.9rem 1.25rem 1.6rem;
+  border: 1px solid #d6e5f8;
+  border-radius: 0.95rem;
+  background: #ffffff;
+  box-shadow: 0 14px 32px rgba(27, 73, 129, 0.06);
+  text-align: center;
+}
+
+.salesforce-why-stat h3 {
+  margin: 0;
+  color: var(--salesforce-blue);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.salesforce-why-stat p {
+  margin: 0.7rem 0 0;
+  color: #567095;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.salesforce-process-section {
+  padding: 0 0 92px;
+}
+
+.salesforce-process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 2.6rem;
+}
+
+.salesforce-process-step {
+  --process-accent: var(--salesforce-blue);
+  position: relative;
+  min-height: 176px;
+  padding: 1.5rem 1rem 1.25rem;
+  border: 1px solid #d6e5f8;
+  border-radius: 0.95rem;
+  background: #ffffff;
+  box-shadow: 0 14px 32px rgba(27, 73, 129, 0.06);
+  text-align: center;
+}
+
+.salesforce-process-step:not(:last-child)::after {
+  content: "\2192";
+  position: absolute;
+  top: 50%;
+  right: -0.9rem;
+  z-index: 1;
+  color: var(--salesforce-blue);
+  font-size: 1.05rem;
+  font-weight: 800;
+  transform: translateY(-50%);
+}
+
+.salesforce-process-step-sky {
+  --process-accent: #0b9ee8;
+}
+
+.salesforce-process-step-blue {
+  --process-accent: #1674ea;
+}
+
+.salesforce-process-step-teal {
+  --process-accent: #11b8d5;
+}
+
+.salesforce-process-step-purple {
+  --process-accent: #7c61bb;
+}
+
+.salesforce-process-step-green {
+  --process-accent: #27b56b;
+}
+
+.salesforce-process-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  color: #ffffff;
+  background: var(--process-accent);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.salesforce-process-step h3 {
+  margin: 0;
+  color: var(--salesforce-navy);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.salesforce-process-step p {
+  margin: 0.75rem 0 0;
+  color: #567095;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.salesforce-whybits-section {
+  padding: 0 0 92px;
+}
+
+.salesforce-whybits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.3rem;
+  margin-top: 2.6rem;
+}
+
+.salesforce-whybits-card {
+  --whybits-accent: var(--salesforce-blue);
+  --whybits-icon-bg: #e8f5ff;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.6rem 1.5rem;
+  border: 1px solid #d6e5f8;
+  border-radius: 0.95rem;
+  background: #ffffff;
+  box-shadow: 0 14px 32px rgba(27, 73, 129, 0.06);
+}
+
+.salesforce-whybits-card-sky {
+  --whybits-accent: #08a5ea;
+  --whybits-icon-bg: #e8f5ff;
+}
+
+.salesforce-whybits-card-blue {
+  --whybits-accent: #1674ea;
+  --whybits-icon-bg: #e7efff;
+}
+
+.salesforce-whybits-card-teal {
+  --whybits-accent: #11c2ca;
+  --whybits-icon-bg: #e4f9fb;
+}
+
+.salesforce-whybits-card-green {
+  --whybits-accent: #27b56b;
+  --whybits-icon-bg: #e3f7ec;
+}
+
+.salesforce-whybits-card-orange {
+  --whybits-accent: #f3a31b;
+  --whybits-icon-bg: #fff3df;
+}
+
+.salesforce-whybits-card-purple {
+  --whybits-accent: #8c69c8;
+  --whybits-icon-bg: #f1eafd;
+}
+
+.salesforce-whybits-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  border-radius: 0.85rem;
+  color: var(--whybits-accent);
+  background: var(--whybits-icon-bg);
+  font-size: 1.3rem;
+}
+
+.salesforce-whybits-copy h3 {
+  margin: 0;
+  color: var(--salesforce-navy);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.salesforce-whybits-copy p {
+  margin: 0.55rem 0 0;
+  color: #567095;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.salesforce-cta-section {
+  padding: 0;
+}
+
+.salesforce-cta-shell {
+  padding: 4.4rem 1.5rem 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, #2d5388 0%, #295085 100%);
+}
+
+.salesforce-cta-shell h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+
+.salesforce-cta-shell p {
+  max-width: 940px;
+  margin: 1rem auto 0;
+  color: rgba(228, 239, 255, 0.84);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.salesforce-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.salesforce-cta-call,
+.salesforce-cta-enquiry {
+  gap: 0.55rem;
+  min-width: 230px;
+}
+
+.salesforce-footer {
+  padding: 0;
+  background:
+    linear-gradient(125deg, rgba(6, 24, 46, 0.95), rgba(7, 33, 61, 0.92)),
+    url("../Images/contact2.jpg") center / cover no-repeat;
+  border-top: 1px solid rgba(134, 214, 255, 0.25);
+}
+
+.salesforce-footer .container {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.salesforce-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.salesforce-footer-logo {
+  width: 222px;
+  max-width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.salesforce-footer-brand p {
+  margin: 0 0 0.5rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.salesforce-footer-col h4 {
+  margin: 0 0 0.9rem;
+  color: #ffffff;
+  font-size: 1.16rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.salesforce-footer-col a {
+  display: block;
+  margin: 0 0 0.5rem;
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  transition: color 0.2s ease;
+}
+
+.salesforce-footer-col p,
+.salesforce-footer-col p a {
+  display: block;
+  margin: 0 0 0.5rem;
+  color: #d7e7f8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.salesforce-footer-col a:hover {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.salesforce-footer-contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #8fb0d2;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.salesforce-footer-contact + .salesforce-footer-contact {
+  margin-top: 0.8rem;
+}
+
+.salesforce-footer-contact i {
+  color: var(--salesforce-blue);
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.salesforce-footer-base {
+  margin-top: 24px;
+  padding: 16px 0 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.89rem;
+  line-height: 1.5;
+}
+
+.salesforce-eyebrow,
+.salesforce-section-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.salesforce-showcase-copy h1 {
+  font-size: clamp(2rem, 3.1vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+.salesforce-intro,
+.salesforce-section-intro,
+.salesforce-agentforce-head p,
+.salesforce-cta-shell p {
+  font-size: 1rem;
+}
+
+.salesforce-section-intro,
+.salesforce-bi-copy p,
+.salesforce-service-card p,
+.salesforce-service-list li,
+.salesforce-pipeline-step p,
+.salesforce-why-text p,
+.salesforce-process-step p,
+.salesforce-whybits-copy p {
+  color: var(--salesforce-copy-soft);
+}
+
+.salesforce-showcase-copy h1,
+.salesforce-section-head h2,
+.salesforce-why-copy h2 {
+  color: var(--salesforce-navy);
+}
+
+.salesforce-showcase-copy h1 {
+  color: #ffffff;
+}
+
+.salesforce-section-head h2,
+.salesforce-why-copy h2 {
+  font-size: clamp(1.45rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.salesforce-agentforce-head h2,
+.salesforce-cta-shell h2 {
+  font-size: clamp(1.35rem, 2.25vw, 2rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.salesforce-service-card h3,
+.salesforce-pipeline-step h3,
+.salesforce-agentforce-card h3,
+.salesforce-bi-copy h3,
+.salesforce-why-text h3,
+.salesforce-process-step h3,
+.salesforce-whybits-copy h3 {
+  font-size: 1.04rem;
+  font-weight: 700;
+}
+
+.salesforce-service-card p,
+.salesforce-service-list li,
+.salesforce-pipeline-step p,
+.salesforce-agentforce-card p,
+.salesforce-bi-copy p,
+.salesforce-why-text p,
+.salesforce-process-step p,
+.salesforce-whybits-copy p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.salesforce-agentforce-card p,
+.salesforce-agentforce-head p {
+  color: rgba(231, 245, 255, 0.88);
+}
+
+.salesforce-agentforce-card h3 {
+  color: #ffffff;
+}
+
+.salesforce-stat h2 {
+  font-size: clamp(1.2rem, 2.2vw, 1.95rem);
+}
+
+.salesforce-stat p,
+.salesforce-why-stat p {
+  font-size: 0.86rem;
+}
+
+.salesforce-why-stat h3 {
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+}
+
+.salesforce-bi-pillbar-label,
+.salesforce-bi-pill,
+.salesforce-agentforce-cap-label,
+.salesforce-agentforce-cap-pill,
+.salesforce-partner-pill,
+.salesforce-footer-base {
+  font-weight: 700;
+}
+
+.salesforce-footer-brand p,
+.salesforce-footer-col a,
+.salesforce-footer-col p,
+.salesforce-footer-contact {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1075.98px) {
+  .salesforce-showcase-shell {
+    padding-top: 64px;
+    padding-bottom: 54px;
+  }
+
+  .salesforce-showcase-copy {
+    max-width: none;
+    text-align: center;
+  }
+
+  .salesforce-eyebrow {
+    justify-content: center;
+  }
+
+  .salesforce-intro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .salesforce-actions {
+    justify-content: center;
+  }
+
+  .salesforce-brand-card {
+    margin: 0 auto;
+  }
+
+  .salesforce-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .salesforce-stat:nth-child(3) {
+    border-left: none;
+  }
+
+  .salesforce-stat:nth-child(n + 3) {
+    border-top: 1px solid rgba(217, 231, 249, 0.12);
+  }
+
+  .salesforce-consult-wrap {
+    width: 100%;
+    min-width: 0;
+    margin-top: 0.4rem;
+  }
+
+  .salesforce-consult-btn {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .salesforce-services-section {
+    padding: 64px 0 78px;
+  }
+
+  .salesforce-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .salesforce-pipeline-section {
+    padding: 0 0 78px;
+  }
+
+  .salesforce-pipeline-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .salesforce-pipeline-step:nth-child(odd):not(:last-child)::after {
+    display: none;
+  }
+
+  .salesforce-pipeline-step:nth-child(even)::after {
+    display: none;
+  }
+
+  .salesforce-pipeline-step:nth-child(3) {
+    border-left: none;
+    border-top: 1px solid #d6e5f8;
+  }
+
+  .salesforce-pipeline-step:nth-child(4),
+  .salesforce-pipeline-step:nth-child(5) {
+    border-top: 1px solid #d6e5f8;
+  }
+
+  .salesforce-pipeline-step:nth-child(5) {
+    grid-column: 1 / -1;
+    border-left: none;
+  }
+
+  .salesforce-agentforce-section {
+    padding: 0 0 78px;
+  }
+
+  .salesforce-agentforce-section .container {
+    padding-top: 60px;
+  }
+
+  .salesforce-bi-section {
+    padding: 64px 0 78px;
+  }
+
+  .salesforce-why-section {
+    padding: 0 0 78px;
+  }
+
+  .salesforce-why-shell {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .salesforce-process-section {
+    padding: 0 0 78px;
+  }
+
+  .salesforce-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .salesforce-process-step:not(:last-child)::after {
+    display: none;
+  }
+
+  .salesforce-process-step:nth-child(5) {
+    grid-column: 1 / -1;
+  }
+
+  .salesforce-whybits-section {
+    padding: 0 0 78px;
+  }
+
+  .salesforce-whybits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .salesforce-cta-shell {
+    padding-top: 3.8rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .salesforce-footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+@media (max-width: 575.98px) {
+  .salesforce-showcase-shell {
+    padding-top: 52px;
+    padding-bottom: 40px;
+  }
+
+  .salesforce-eyebrow {
+    width: 100%;
+    justify-content: center;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: 0.74rem;
+    letter-spacing: 0.05em;
+  }
+
+  .salesforce-intro {
+    font-size: 0.98rem;
+  }
+
+  .salesforce-actions {
+    flex-direction: column;
+  }
+
+  .salesforce-primary-btn,
+  .salesforce-secondary-btn {
+    width: 100%;
+  }
+
+  .salesforce-brand-card {
+    padding: 1.9rem 1.25rem 1.7rem;
+  }
+
+  .salesforce-services-section {
+    padding: 52px 0 64px;
+  }
+
+  .salesforce-section-label {
+    font-size: 0.74rem;
+    letter-spacing: 0.12em;
+  }
+
+  .salesforce-section-intro {
+    font-size: 0.98rem;
+  }
+
+  .salesforce-services-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2.1rem;
+  }
+
+  .salesforce-service-card {
+    padding: 1.45rem 1.2rem 1.35rem;
+  }
+
+  .salesforce-pipeline-section {
+    padding: 0 0 64px;
+  }
+
+  .salesforce-pipeline-grid {
+    grid-template-columns: 1fr;
+    margin-top: 2.1rem;
+  }
+
+  .salesforce-pipeline-step {
+    min-height: 0;
+    padding: 1.35rem 1.05rem 1.2rem;
+  }
+
+  .salesforce-pipeline-step + .salesforce-pipeline-step {
+    border-left: none;
+    border-top: 1px solid #d6e5f8;
+  }
+
+  .salesforce-pipeline-step:not(:last-child)::after {
+    display: none;
+  }
+
+  .salesforce-pipeline-step:nth-child(3),
+  .salesforce-pipeline-step:nth-child(5) {
+    border-left: none;
+  }
+
+  .salesforce-pipeline-step:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .salesforce-agentforce-section {
+    padding: 0 0 64px;
+  }
+
+  .salesforce-agentforce-section .container {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .salesforce-agentforce-head p {
+    font-size: 0.98rem;
+  }
+
+  .salesforce-agentforce-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2.1rem;
+  }
+
+  .salesforce-agentforce-card {
+    min-height: 0;
+    padding: 1.4rem 1.15rem 1.2rem;
+  }
+
+  .salesforce-agentforce-capabilities {
+    gap: 0.6rem;
+    margin-top: 1.4rem;
+    padding: 1rem;
+  }
+
+  .salesforce-agentforce-cap-label,
+  .salesforce-agentforce-cap-pill {
+    font-size: 0.88rem;
+  }
+
+  .salesforce-bi-section {
+    padding: 52px 0 64px;
+  }
+
+  .salesforce-bi-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2.1rem;
+  }
+
+  .salesforce-bi-card {
+    padding: 1.2rem 1rem;
+  }
+
+  .salesforce-bi-pillbar {
+    gap: 0.6rem;
+    margin-top: 1.2rem;
+    padding: 0.95rem;
+  }
+
+  .salesforce-bi-pillbar-label,
+  .salesforce-bi-pill {
+    font-size: 0.86rem;
+  }
+
+  .salesforce-why-section {
+    padding: 0 0 64px;
+  }
+
+  .salesforce-why-list {
+    margin-top: 1.6rem;
+    gap: 0.9rem;
+  }
+
+  .salesforce-why-item {
+    gap: 0.8rem;
+  }
+
+  .salesforce-why-icon {
+    flex-basis: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .salesforce-why-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .salesforce-why-stat {
+    padding: 1.5rem 1rem 1.3rem;
+  }
+
+  .salesforce-process-section {
+    padding: 0 0 64px;
+  }
+
+  .salesforce-process-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2.1rem;
+  }
+
+  .salesforce-process-step {
+    min-height: 0;
+    padding: 1.35rem 1rem 1.15rem;
+  }
+
+  .salesforce-process-step:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .salesforce-whybits-section {
+    padding: 0 0 64px;
+  }
+
+  .salesforce-whybits-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2.1rem;
+  }
+
+  .salesforce-whybits-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .salesforce-cta-shell {
+    padding: 3rem 1rem 2.8rem;
+  }
+
+  .salesforce-cta-shell p {
+    font-size: 0.98rem;
+  }
+
+  .salesforce-cta-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.6rem;
+  }
+
+  .salesforce-cta-call,
+  .salesforce-cta-enquiry {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .salesforce-footer .container {
+    padding-top: 2.4rem;
+  }
+
+  .salesforce-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .salesforce-footer-brand p,
+  .salesforce-footer-col a,
+  .salesforce-footer-contact {
+    font-size: 0.94rem;
+  }
+
+  .salesforce-footer-base {
+    margin-top: 2rem;
+    font-size: 0.88rem;
+  }
+
+  .salesforce-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .salesforce-stat + .salesforce-stat {
+    border-left: none;
+    border-top: 1px solid rgba(217, 231, 249, 0.12);
+  }
+
+  .salesforce-stat:nth-child(n + 3) {
+    border-top: 1px solid rgba(217, 231, 249, 0.12);
+  }
+}
